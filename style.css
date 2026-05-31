@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    background:#0d1117;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    text-align:center;
+    padding:40px;
+}
+
+.servo-card{
+    max-width:500px;
+    margin:auto;
+    background:#161b22;
+    padding:25px;
+    border-radius:12px;
+}
+
+#servo-model{
+    font-size:40px;
+    margin:30px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    cursor:pointer;
+}
