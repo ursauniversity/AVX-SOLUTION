@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVX Servo System</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>AVX Servo Motor Interface</h1>
 
-    <p>Status: Online</p>
-    <p>Torque: 12 Nm</p>
-    <p>Rotation: 180°</p>
-    <p>Response Time: 0.05 s</p>
+<div class="container">
 
-    <button>Activate Servo</button>
+    <h1>AVX Servo System</h1>
+
+    <div class="servo-card">
+
+        <h2>AVX-S01</h2>
+
+        <div id="servo-model">
+            ⚙️ SERVO MOTOR
+        </div>
+
+        <div class="stats">
+            <p>Status: <span id="status">ONLINE</span></p>
+            <p>Torque: <span id="torque">12 Nm</span></p>
+            <p>Rotation: <span id="rotation">180°</span></p>
+            <p>Temperature: <span id="temp">35°C</span></p>
+        </div>
+
+        <button onclick="rotateServo()">
+            Activate Servo
+        </button>
+
+    </div>
+
+</div>
+
+<script src="engine.js"></script>
+
 </body>
 </html>
